@@ -1,0 +1,19 @@
+<html>
+    <body>
+        <script>
+            var anoNascimento = prompt("Por favor, informe a data do seu nascimento:");
+            while(anoNascimento >=2020){
+                alert ("Por favor, informe seu ano de nascimento corretamente.");
+                anoNascimento = prompt("Por favor, informe seu ano de nascimento:")
+            }
+
+            var anoAtual = prompt ("E qual é o seu ano?");
+
+            var idadeFinal = anoAtual - anoNascimento;
+
+            alert("A idade final é: "+ idadeFinal);
+
+// o While vai gerar um looping até a condição for compatível com o valor esperado.
+        </script>
+    </body>
+</html>
