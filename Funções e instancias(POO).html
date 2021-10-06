@@ -1,0 +1,30 @@
+<html>
+    <body>
+        <script>
+            function Pessoa () {
+                this.nome = 'Erick' ; //valor padrão 
+            }
+
+            var pessoa = new Pessoa () ; //novo objeto
+           
+            pessoa.nome = 'Ana'; //modificando os valores
+            alert (pessoa.nome);
+        </script>
+    </body>
+</html>
+
+<!-- this // é uma variável para esse tipo de objeto em questão.
+ 
+ >>> Se utilizar o 'var' para declarar uma variável dentro da função do objeto o resultado será 'undefined'.
+
+ >>> Também é possivel modificar os valores dentro do objeto.
+
+ >>> Caso se crie um novo objeto como
+  varpessoa2 = newPessoa(); 
+
+  alert(pesssoa2.nome); 
+
+  ele ainda irá responder "Erick" porque o valor padrão que começa é o "Erick" dentro da function.
+
+-->
+
