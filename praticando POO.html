@@ -1,0 +1,160 @@
+<html>
+    <body>
+        <script>
+            function Pessoa(){
+               this.nome = "Erick";
+               this.idade = "29";
+               this.printNome = function(numero) {
+                   alert(numero);
+               };
+                   this.returnAnimal = function(animal){
+                       return animal;
+                   
+               }
+            }
+
+            function Animal(){
+                this.nome = "totó";
+                this.raca = "Vira-lata";
+            }
+                   var pessoa = new Pessoa();
+
+                   var animal = new Animal();
+
+                   alert(pessoa.returnAnimal(animal).raca);
+        </script>
+    </body>
+</html>
+
+<!--
+     >>> CRIANDO UMA FUNCTION QUE INTERAJA DENTRO DO OBJETO <<<
+
+   ex.       function Pessoa(){
+               this.nome = "Erick";
+               this.idade = "29";
+               this.printNome = function() {
+                   alert(this.nome);
+               }
+            }
+
+               >>> PARA INVOCAR A FUNCTION <<<
+
+var pessoa = new Pessoa ()
+pessoa.printNome ();
+
+           >>> PASSANDO UM PARÂMETRO PARA A FUNCTION <<<
+
+ function Pessoa () {
+                this.nome = "Erick";
+                this.idade = "29";
+                this.printNome = function (numero){
+                    alert(numero);
+                }
+            }
+
+            var pessoa = new Pessoa ();
+
+            pessoa.printNome(10);
+
+
+            >>> FAZENDO UM OBJETO INTERAGIR COM OUTRO <<<
+            
+            function Pessoa () {
+                this.nome = "Erick";
+                this.idade = "29";
+                this.printNome = function (numero){
+                    alert(numero);
+                }
+            }
+            
+            var pessoa = new Pessoa();
+            var pessoa_2 = new Pessoa();
+
+            pessoa_2.nome = "Xenofômpila";
+
+            pessoa.printNome(pessoa_2.nome);
+
+           >>> ADICIONANDO OUTRO OBJETO AO PROGRAMA <<<
+
+            function Pessoa(){
+               this.nome = "Erick";
+               this.idade = "29";
+               this.printNome = function(numero) {
+                   alert(numero);
+               }
+            }
+                   function Animal(nome,peso){
+                       this.nome = nome;
+                       this.peso = peso;
+                    
+                   }
+                   animal = new Animal ("Coelho", "5kg");
+
+                   animal2 = new Animal ("Tubarão", "500kg");
+
+                   alert(animal.nome);
+
+                   alert(animal2.peso);
+
+
+                 >>>>  VALIDANDO AS INFORMAÇÕES 
+                        NA CRIAÇÂO DO OBJETO <<<<
+
+                  function Pessoa(){
+               this.nome = "Erick";
+               this.idade = "29";
+               this.printNome = function(numero) {
+                   alert(numero);
+               }
+            }
+                   function Animal(nome,peso){
+                       if(nome == undefined){
+                           nome = 'Coelho';
+                          
+                       if(peso == undefined){
+                           peso = '3kg';
+                       }   
+
+                       }
+                       this.nome = nome;
+                       this.peso = peso;
+                    
+                   }
+                   animal = new Animal();
+
+                  alert(animal.nome);
+
+    Se quiser alterar o elemento do objeto, basta criar um parâmetro dentro de...  new Animal ();        
+    
+
+    >>>>> COMO PASSAR UM OBJETO COMO PARÂMETRO DA FUNÇÃO <<<<<
+
+
+function Pessoa(){
+               this.nome = "Erick";
+               this.idade = "29";
+               this.printNome = function(numero) {
+                   alert(numero);
+               };
+                   this.returnAnimal = function(animal){
+                       return animal;
+                   
+               }
+            }
+
+            function Animal(){
+                this.nome = "totó";
+                this.raca = "Vira-lata";
+            }
+                   var pessoa = new Pessoa();
+
+                   var animal = new Animal();
+
+                   alert(pessoa.returnAnimal(animal).raca);
+
+   **** Caso se desejar alterar a raaça, basta:
+   
+         animal.raca = "Maltêz";
+
+             
+-->
