@@ -1,0 +1,146 @@
+<html>
+    <body>
+     <script>
+class Animal {
+    constructor (nome) {
+      this.nome = nome ;
+    }
+    printNome(){
+        return this.nome;
+    }
+}
+class Tubarao extends Animal{
+    constructor(nome){
+        super(nome);
+        this.raca = "limao";
+    }
+
+
+printRaca(){
+    return this.raca;
+  }
+
+}
+
+tubarao = new Tubarao ("tutubarao")
+
+alert(tubarao.printNome());
+    </script>
+  </body>
+</html>
+
+<!--
+
+         >>>>>>>>>>>>  CRIANDO A CLASSE <<<<<<<<<<<
+
+ class Animal {
+    constructor () {
+
+    this.nome = "cachorro";
+    }
+}
+animal = new Animal();
+
+    alert (animal.nome);
+
+
+-------------------------------------------------------------
+OBS.
+Instanciar é criar a classe, o objeto.
+
+As classes também é programação orientada a objetos.
+Também é possível utilizar as functions para o POO, porém as classes são a forma mais eficaz e completa de desempenhar.
+-------------------------------------------------------------
+    
+        >>>>>> CRIANDO AS CLASSES COM PARÂMETROS <<<<<<<
+
+     class Animal {
+    constructor (nome) {
+
+    this.nome = nome ;
+    }
+}
+animal = new Animal('Lebre');
+
+    alert (animal.nome);
+
+
+    >>>>> DECLARANDOS FUNÇÕES(MÉTODOS) COM AS CLASSES <<<<<<
+
+ class Animal {
+    constructor (nome) {
+
+    this.nome = nome ;
+    }
+    printNome(){
+        return this.nome;
+    }
+}
+animal = new Animal('Lebre');
+
+    alert (animal.printNome());
+    
+                
+
+                     >>>> EXTENDS  <<<<<
+
+
+class Animal {
+    constructor (nome) {
+
+    this.nome = nome ;
+    }
+    printNome(){
+        return this.nome;
+    }
+}
+class Tubarao extends Animal{
+    constructor(nome){
+        super(nome);
+    }
+}
+
+tubarao = new Tubarao("limão");
+
+    alert (tubarao.printNome());
+
+ ---------------------------------------------------------   
+    OBS.
+   O que o EXTENDS está fazendo é declarar a classe "Tubarao" e herdando tudo que está na classe "Animal".
+   Sendo assim, todos os atributos e especificações que há na classe Animal agora existe na classe Cachorro.
+
+   Não esqueça de definir os parâmetros que estão correlacionados entre uma classe e outra, se não o código retornará UNDEFINED.
+
+   O super está invocando o construtor da classe PAI que é o ANIMAL no programa acima.
+
+
+
+-----------------------------------------------------------  
+
+>>>>>>>>>> IMPLEMENTANDO NOVOS ATRIBUTOS <<<<<<<<<<<<
+
+class Animal {
+    constructor (nome) {
+      this.nome = nome ;
+    }
+    printNome(){
+        return this.nome;
+    }
+}
+class Tubarao extends Animal{
+    constructor(nome){
+        super(nome);
+        this.raca = "limao";
+    }
+
+
+printRaca(){
+    return this.raca;
+  }
+
+}
+
+tubarao = new Tubarao ("tutubarao")
+
+alert(tubarao.printNome());
+-->
