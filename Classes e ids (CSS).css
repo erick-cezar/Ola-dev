@@ -1,0 +1,52 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+h2 {
+    font-size: 17px;
+    font-weight: normal;
+    font-family: 'Akronim', cursive;
+    font-style: italic;
+}
+
+.teste {
+            color: red;
+}
+#teste {
+    color: green;
+}
+
+.paragrafo {
+    color: indigo;
+    font-size: 30px;
+}
+/*
+                 >>>> CLASSES E IDS NO CSS <<<<<<
+        No CSS as classes são representadas por um ponto ...
+
+        NO HTML
+        <h2 class="teste">
+
+        NO CSS
+        .teste {
+
+        }
+            Já os ID são representados pela tralha...
+
+            NO HTML
+            <h2 id="teste">
+
+            NO CSS
+            #teste {
+
+            }
+
+            Apesar de se poder utilizar os id's no CSS para manipular estilos, dentro de um projeto eles são utilizados para marcar o que será trabalhado depois no Javascript. 
+            
+            SÃO BOAS PRÁTICAS APENAS SE TRABALHAR COM AS CLASSES NO CSS.
+
+            Para atribuir importância ao parágrafo, pode-se colocar um p.paragrafo no css.
+            */
