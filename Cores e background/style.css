@@ -1,0 +1,35 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+h2 {
+    font-size: 17px;
+    font-weight: normal;
+    font-family: 'Akronim', cursive;
+    font-style: italic;
+}
+
+div{
+ background-color: red ;
+}
+
+h2 {
+    color: #FFFAAA;
+}
+
+/*  >>>>>> FORMAS DE DEFINIÇÃO DE CORES   <<<<<
+
+1. Definindo por nome; red, black..
+
+2. Códigos hexadeciamis #FFFFFFF; (branco)
+
+3. Conta gotas (o quadradinho colorido)
+
+4. rgb (255, 255, 255) Branco (red, green, blue) 
+
+5. rgba (opacidade) variando os parâmetros
+
+*/
