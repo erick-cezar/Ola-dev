@@ -1,0 +1,42 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+h2 {
+    font-size: 17px;
+    font-weight: normal;
+    font-family: 'Akronim', cursive;
+    font-style: italic;
+}
+
+[name=paragrafo]{
+    color: blue;
+}
+
+[name=paragrafo2]{
+    color: green;
+}
+
+[name]{
+    font-family: Arial;
+    font-style: italic;
+}
+
+[type=button]{
+    background-color: red;
+}
+
+[type=text]{
+    width: 100px;
+}
+
+/*  >>>>>> CRIANDO UM ATRIBUTO PARA MANIPULAR NO CSS   <<<<<
+
+Existem tags que possuem seus atributos padrão como 
+    <img src=" " /> como source, mas você pode criar os próprios atributos nas tags para manipular distintamente de uma classe ou id no CSS.
+
+    Para chamar todos os atributos com o mesmo nome, basta retirar o valor do atributo. 
+*/
