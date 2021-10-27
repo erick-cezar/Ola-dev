@@ -1,0 +1,29 @@
+<html>
+    <body>
+        <div class = 'box'></div>
+        <div class = 'box'></div>
+        <div class = 'box'></div>
+        <div class = 'box'></div>
+        <div class = 'box'></div>
+        <div class = 'box'></div>
+        <script>
+            var elementos = document.getElementsByClassName('box');
+           var el = elementos[0];
+
+          
+          for (var i=0; i < elementos.length; i++){
+              var el = elementos[i];
+              el.style.width = 100;
+           el.style.height = 100;
+           el.style.backgroundColor = 'yellow';
+           el.style.marginLeft = 200;
+           el.style.marginTop = 10;
+           el.style.borderwidth = 1;
+           el.style.borderColor = 'black';
+           el.style.borderStyle = 'solid';
+          }
+        </script>
+    </body>
+</html>
+
+<!--Criando um looping dinâmico de 5 boxs para aplicar um design várias vezes pelas classes -->
