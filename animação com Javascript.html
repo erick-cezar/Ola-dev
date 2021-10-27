@@ -1,0 +1,39 @@
+<html>
+    <body>
+        <style> 
+            .box {
+                width: 200px;
+                height: 200px;
+                background-color: rgb(33, 201, 33);
+                margin-left: 0;
+            }
+            .animEsquerda{
+                transition: 1s;
+                margin-left: 90px;
+                margin-top: 20px;
+                background-color: red;
+            }
+
+            </style>
+            <div class = "box"></div>
+        <script>
+            var box = document.querySelectorAll('.box')[0];
+            /*setTimeout(()=>{
+                box.classList.add('animEsquerda');
+            },1000); */
+
+            box.addEventListener('click', ()=>{
+        box.classList.add('animEsquerda');
+            })
+        </script>
+    </body>
+</html>
+
+<!--               >>> Executando o evento mediante a um click <<<
+
+    box.addEventListener('click', ()=>{
+        box.classList.add('animEsquerda');
+    })
+
+    1000 milissegundos = 1 segundo
+-->
