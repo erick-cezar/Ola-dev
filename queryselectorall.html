@@ -1,0 +1,29 @@
+<html>
+    <body>
+        <div class = 'testes'>
+            <div class = 'inside-testes'> Texto </div>
+            </div>
+            <div class = 'testes'>
+                <div class = 'inside-testes'> <strong>Texto2</strong> </div>
+                </div>
+            <script>
+                var els = document.querySelectorAll('.testes .inside-testes');
+                els[0].style.color = 'red';
+                els[1].style.color = 'blue';
+                els [0]. innerHTML = 'Hello, world!'
+                els[1].innerHTML = '<div class = "inside-testes-via-js"> Alterado via script ! </div>'
+            </script>
+    </body>
+</html>
+
+<!-- Retorna uma lista de elementos presentes no documento (usando ordenação em profundidade; pré-ordenada, e transversal dos nós de documento) que considera com o grupo de seletores especificado.
+
+     >>>> Manipulando o que tem dentro da classe 'testes'<<<<
+
+ els [0]. innerHTML = 'Hello, world!'
+
+
+ >>>> ALterando o valor e o conteúdo da classe dentro da div através do script 
+
+ els[1].innerHTML = '<div class = "inside-testes-via-js"> Alterado via script ! </div>'
+-->
