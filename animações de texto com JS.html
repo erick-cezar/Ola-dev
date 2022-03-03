@@ -1,0 +1,67 @@
+<html>
+    <body>
+        <style>
+            .conteudo h2 span{
+                font-size: 13px;
+                cursor: pointer;
+            }
+            .conteudo p{
+                overflow: hidden;
+                height: 10px;
+                transition:1s;
+            }
+            .mostrar{
+                height: 200px !important;
+            }
+           
+        </style>
+        <div class="conteudo">
+            <h2>Título do conteúdo
+                <span> Ver mais!</span>
+            </h2>
+            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. "</p>
+        </div>
+        <script>
+          
+          var span = document.querySelector('.conteudo span');
+
+
+            span.addEventListener('click',function(){
+               var conteudo = document.querySelector
+               ('.conteudo p');
+
+               if (conteudo.classList.contains('mostrar')){
+                   span.innerHTML = 'Ver mais!';
+                   conteudo.classList.remove('mostrar');
+               }else{
+                   span.innerHTML= 'Ocultar';
+                   conteudo.classList.add('mostrar');
+                   
+               }
+               
+            });
+        </script>
+    </body>
+</html>
+
+<!--
+    document.querySelector('.conteudo p')
+    .classList.add('mostrar'); 
+    
+    >>> Faz a animação do parágrafo na ação do click no "VER MAIS" 
+    obs. Lá no <style> o comando !important faz a classe pular a hierarquia no CSS.
+
+       
+       >>> Disparando uma animação através do alertas clicando em VER MAIS e consecutivamente escondendo o conteúdo clicando noavamente com o alerta descrevendo as ações. <<<
+       
+        var conteudo = document.querySelector
+               ('.conteudo p');
+
+               if (conteudo.classList.contains('mostrar')){
+                   alert('Esconda o conteúdo');
+                   conteudo.classList.remove('mostrar');
+               }else{
+                   conteudo.classList.add('mostrar');
+                   alert('mostre o conteúdo');
+
+-->
