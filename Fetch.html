@@ -1,0 +1,27 @@
+<html>
+    <body>
+        <script>  //REQUISIÇÃO GET
+
+        /*    fetch('https://jsonplaceholder.typicode.com/todos/1')
+            .then(response=> response.json())
+            .then(json=>console.log(json))          */
+//----------------------------------------------------------
+//              REQUISIÇÃO POST  
+fetch('https://jsonplaceholder.typicode.com/posts',{
+    method: 'POST',
+    body: JSON.stringfy({   
+    title: 'Danki Code',
+    body:'Meu conteúdo',
+    userId: 10    
+
+    }),
+    headers:{
+        'Content-Type':'aplication/json; charset=UTF-8'
+    }
+})
+            .then(response=> response.json())
+            .then(json=>console.log(json))          
+        </script>
+    </body>
+</html>
+<!-- O fetch é como o AJAX, porém mais simples e moderno-->
