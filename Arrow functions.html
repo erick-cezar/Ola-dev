@@ -1,0 +1,42 @@
+<html>
+    <body>
+        <script> /* SINTAXE ARROW FUNCTION:
+            
+            const func = ()=>{
+                alert('Hello, world!')
+            }
+           func(); */
+
+//---------------------------------------------------
+/* CRIANDO PARÂMETROS DENTRO DA ARROW FUNCTION: 
+            var testes = (par)=>{
+                alert(par);
+            }
+            testes('Hello, world!');            */
+//-----------------------------------------------------
+// PASSANDO UM PARÂMETRO PRA FUNCTION E CHAMANDO ELA NA ARROW FUNCTION:
+            let testes = (texto,par)=>{
+                par(texto);
+            }
+            testes('Olá mundo',(texto)=>{                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  2
+                alert(texto);
+            });
+
+        
+        </script>
+    </body>
+</html>
+
+<!--
+Arrow functions: É uma forma moderna de declarar funções no javascript.
+
+Tradicional: 
+function testes(){
+
+}
+
+Moderno:
+ let testes = ()=>{
+
+}
+-->

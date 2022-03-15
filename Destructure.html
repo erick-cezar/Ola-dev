@@ -1,0 +1,24 @@
+<html>
+    <body>
+        <script>
+/*ARMAZENANDO EM UMA VARIÁVEL ESPECÍFICA CADA ÍNDICE DE UM ARRAY:
+
+const arr = ['Guilherme','João', 'Felipe'];
+const [a,b,c] = arr;
+alert(b);               
+
+------------------------------------------------*/
+
+//ARMAZENANDO EM UMA VARIÁVEL VÁRIOS ATRIBUTOS EM UM ÚNICO ÍNDICE:
+
+var arr = ['carro', 'moto', 'bicicleta', 'avião', 'helicóptero']
+var [a,b,...c] = arr
+alert(c); //(c[0]) avião ; (c[1]) helicóptero;
+        </script>
+    </body>
+</html>
+
+<!-- DESTRUCTURING ASSIGNMENT: Possibilita extrair dados de arrays ou objetos em variáveis distintas.
+
+    obs.: OBJETO: É uma entidade do domínio de interesse do problema sob análise.
+-->
