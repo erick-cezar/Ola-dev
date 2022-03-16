@@ -1,0 +1,71 @@
+<html>
+    <body>
+        <div class="container">
+
+        </div>
+
+        <script>
+            fetch('https://api.themoviedb.org/3/movie/popular?api_key=506fadb0256c13349acc05dabebf9604&language=en-US&page=1',{
+                method: 'GET'
+            })
+            .then(response => response.json())
+            .then(function(json){
+              var container = document.querySelector('.container');  
+       
+       //       console.log(json);
+                json.results.map(function(val){
+                    container.innerHTML+= `
+                    
+                  <div style='cursor:pointer;' class= 'tituloFilme'>`+val.title+`<hr>
+                   <div style='display:none;' class='description'>`+val.overview+`</div>
+                 
+                   </div> `; //Tudo sendo consumido da API.
+                })
+                
+             var titulos = document.querySelectorAll('.tituloFilme') ;
+             for (var i = 0; i< titulos.length; i++){
+                 titulos[i].addEventListener('click',function (t){ 
+                     if( t.target.querySelector('.description').style.display =='none'){
+                  t.target.querySelector('.description').style.display ='block'; 
+                     }else{
+                        t.target.querySelector('.description').style.display ='none';
+                     }   
+                    })
+                }
+       
+            })
+        </script>
+    </body>
+</html>
+<!--PAREI EM 04:52
+
+    +val.overview+ >>> Atributo que me dá o resumo completo de cada filme.
+
+    style='display:none' >>> O conteúdo vai ficar oculto até eu clicar e mostrar.
+
+    OBS. Não se coloca <div> dentro de <p>, é semanticamente incorreto.
+
+        function (t){} >>>  Pega o "filho" da <div tituloFilme> o description e mostrar.
+
+    style='cursor:pointer' >>> Toda vez em que o cursor passar por cima do botão oculto ele muda para o modo "mãozinha".   
+
+    REVISANDO: 
+    1. Foi feito a requisição "fetch" diretamente para a lista de filmes
+
+    2. Através do método GET que retornou uma lista completa que foi armazenado dentro do (json)
+
+    3. Depois foi feito um mapa dentro dos resultados |json.results.map| e colocou dentro da <div class = 'container'> todos os resultados de forma dinâmica
+
+    4. Criou a <div class = 'tituloFilme'> e dentro dela colocou uma descrição oculta que posteriormente apareceria de modo clicável.
+
+    5. Recuperou todos que foram armazenados dentro do título filme e armazenou em
+    | var titulos = document.querySelectorAll('.tituloFilme') ; |   
+    
+    6. Rodou um looping |  for (var i = 0; i< titulos.length; i++){ |
+
+    7. Colocou um envento de click para cada um, onde cada vez que clica se pode rastrear através do (t) através do target
+    
+    8. Implementou uma condição com o filho "description" onde se ele estiver oculto que apareça, senão, ocultar. 
+
+
+-->
